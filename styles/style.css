@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --hitam: #404040;
+  --oren: #fb4141;
+  --biru-muda: #f6f9ff;
+  --bitu-tua: #5e5de7;
+}
+
+body {
+  color: var(--hitam);
+}
+
+main {
+  background-color: var(--biru-muda);
+}
+
+.padding-page {
+  padding: 3rem 3rem;
+}
+
+span {
+  color: var(--oren);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  top: 0px;
+  position: sticky;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0px 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--hitam);
+}
+
+.container button {
+  cursor: pointer;
+  flex-basis: 15%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--bitu-tua);
+  color: white;
+  font-size: 1rem;
+  transition: ease-in-out 500ms;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  margin: auto;
+}
+
+/* end of header */
+
+#content {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: right;
+  width: 50%;
+  padding: 3rem 3rem;
+}
+
+aside img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
+.judul-section {
+  margin-bottom: 2rem;
+}
+
+.biodata {
+  margin-bottom: 2rem;
+  line-height: 150%;
+}
+
+.biodata p {
+  text-align: left;
+  margin: 0px;
+}
+
+.biodata h4 {
+  margin-bottom: 10px;
+}
+
+.skills {
+  margin-top: 1rem;
+}
+
+.skill {
+  display: inline-block;
+  padding: 7px 30px;
+  background-color: white;
+  border-radius: 10px;
+  color: var(--hitam);
+  transition: linear 500ms;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
+/* end of content */
+
+#projects {
+  background-color: white;
+  color: var(--hitam);
+}
+
+#projects h1 {
+  text-align: center;
+}
+
+.cards {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.card {
+  flex-basis: 50%;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--bitu-tua);
+  color: white;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.judul-project {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.card a i {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card p {
+  text-align: left;
+}
+/* end of projects */
+
+#contact {
+  background-color: var(--biru-muda);
+}
+
+#contact h1,
+p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.message label {
+  margin-bottom: 0.5rem;
+}
+
+.message input {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--hitam);
+  margin-bottom: 1.5rem;
+}
+
+.message textarea {
+  border-radius: 12px;
+  border: 1px solid var(--hitam);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  resize: none;
+}
+
+.message button {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: var(--bitu-tua);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: ease-in-out 500ms;
+}
+/* end of contact */
+
+.penutup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f4f8;
+  color: var(--hitam);
+}
+
+.social-media {
+  /* border: 1px solid black; */
+  width: 15%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media i {
+  font-size: 2rem;
+  color: var(--bitu-tua);
+}
+
+.whatsapp {
+  display: none;
+}
+
+/* hover */
+nav ul li a:hover {
+  font-weight: bolder;
+  color: var(--oren);
+}
+
+.container button:hover {
+  background-color: var(--oren);
+  color: white;
+}
+
+.skill:hover {
+  background-color: transparent;
+  color: var(--hitam);
+  outline: 1px solid var(--hitam);
+}
+
+.message button:hover {
+  background-color: white;
+  color: var(--bitu-tua);
+  outline: 1px solid var(--bitu-tua);
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+  opacity: 0;
+  transition: ease-in-out 500ms;
+}
+
+.hamburger-menu.active .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  transition: ease-in 500ms;
+}
+
+.hamburger-menu.active .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+  transition: ease-in 500ms;
+}
+
+/* ========== */
+@media screen and (max-width: 1000px) {
+  .padding-page {
+    padding: 3rem 2rem;
+  }
+
+  header .container {
+    position: inherit;
+    top: auto;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container button {
+    display: none;
+  }
+
+  nav ul {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    flex-direction: column;
+    background-color: #f3f4f8;
+    transition: ease-in-out 1000ms;
+    height: 300px;
+  }
+
+  nav ul li {
+    margin-bottom: 1.5rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin: auto 0px;
+  }
+
+  .hamburger-menu .line {
+    display: block;
+    height: 4px;
+    width: 28px;
+    margin-bottom: 5px;
+    transition: ease-in-out 300ms;
+    background-color: var(--hitam);
+  }
+
+  /* end of header */
+  aside {
+    padding: 3rem 3rem 0px 3rem;
+  }
+
+  #content {
+    width: 100%;
+  }
+
+  .row {
+    display: inline-block;
+    margin: auto;
+  }
+
+  .card {
+    margin-right: 0px;
+  }
+
+  /* end of projects */
+
+  .message {
+    width: 100%;
+  }
+
+  .social-media {
+    width: 50%;
+  }
+
+  .active {
+    top: 0px;
+  }
+
+  .whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bitu-tua);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 20px 20px 0;
+  }
+
+  .whatsapp button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+  }
+}
